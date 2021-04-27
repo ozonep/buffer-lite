@@ -7,16 +7,15 @@
 	"bugs": {
 		"url": "https://github.com/ARitz-Cracker/buffer-lite/issues"
 	},
-	"dependencies": {},
 	"description": "Lightweight buffer library for the browser",
 	"devDependencies": {
-		"chai": "^4.2.0",
+		"chai": "^4.3.4",
 		"chai-as-promised": "^7.1.1",
 		"chai-eventemitter": "^1.1.1",
-		"eslint": "^6.6.0",
-		"eslint-plugin-mocha": "^8.0.0",
-		"mocha": "^6.2.2",
-		"nyc": "^14.1.1"
+		"eslint": "^7.25.0",
+		"eslint-plugin-mocha": "^8.1.0",
+		"mocha": "^8.3.2",
+		"nyc": "^15.1.0"
 	},
 	"homepage": "https://github.com/ARitz-Cracker/buffer-lite",
 	"license": "GPL-3.0",
