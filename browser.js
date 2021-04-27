@@ -650,7 +650,7 @@ class Buffer extends Uint8Array {
 		return offset + 1;
 	}
 	writeUInt16BE(value, offset = 0){
-		if(offset < 0 || (offset + 2) >= this.length){
+		if(offset < 0 || (offset + 2) > this.length){
 			throw new RangeError("Attempt to access memory outside buffer bounds");
 		}
 		this[offset + 1] = value & 255;
@@ -658,7 +658,7 @@ class Buffer extends Uint8Array {
 		return offset + 2;
 	}
 	writeUInt16LE(value, offset = 0){
-		if(offset < 0 || (offset + 2) >= this.length){
+		if(offset < 0 || (offset + 2) > this.length){
 			throw new RangeError("Attempt to access memory outside buffer bounds");
 		}
 		this[offset] = value & 255;
@@ -666,7 +666,7 @@ class Buffer extends Uint8Array {
 		return offset + 2;
 	}
 	writeUInt32BE(value, offset = 0){
-		if(offset < 0 || (offset + 4) >= this.length){
+		if(offset < 0 || (offset + 4) > this.length){
 			throw new RangeError("Attempt to access memory outside buffer bounds");
 		}
 		this[offset + 3] = value & 255;
@@ -676,7 +676,7 @@ class Buffer extends Uint8Array {
 		return offset + 4;
 	}
 	writeUInt32LE(value, offset = 0){
-		if(offset < 0 || (offset + 4) >= this.length){
+		if(offset < 0 || (offset + 4) > this.length){
 			throw new RangeError("Attempt to access memory outside buffer bounds");
 		}
 		this[offset] = value & 255;

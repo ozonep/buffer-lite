@@ -21,7 +21,7 @@
 	"homepage": "https://github.com/ARitz-Cracker/buffer-lite",
 	"license": "GPL-3.0",
 	"main": "index.js",
-	"name": "buffer-lite",
+	"name": "buffer-lite-fixed",
 	"repository": {
 		"type": "git",
 		"url": "git+https://github.com/ARitz-Cracker/buffer-lite.git"
@@ -37,7 +37,7 @@
 		"ci:after": "nyc report --reporter=text-lcov | coveralls",
 		"prepublishOnly": "npm run test:final"
 	},
-	"version": "1.0.0",
+	"version": "2.0.0",
 	"browserRequirifier": {
 		"include": []
 	}
